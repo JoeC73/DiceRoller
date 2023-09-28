@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roll</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="dice.js"></script>
 </head>
 <header>
-    <h1>Dice-Roller!!!</h1>
+    <h1>DEVS INC</h1>
 <h2>Where everyone is a Winner</h2>
 </header>
 <nav>
-    <p>User Instructions: Click a button to win!!!</p>
+    <p>User Instructions: Click a button to roll!</p>
 </nav>
 <article>
-    <img src="./images/thenounproject.png" alt="thenounproject_dice_image" width="200px"/>
-    <button class="button"id="thenounproject" onclick="diceRoll"(1,20, 'roll20')>
-        "Roll a dice"
+    <img src="./images/dice-clipart-3d-dice.png" alt="dice-clipart-3d-dice" width="200px"/>
+    <button class="button" id="Dice6" onclick="diceRoll(1,6, 'roll6')">
+        Roll a Dice6
     </button>
-    <
+    <h1 id="roll6"></h1>
+    <button class="button" id="Dice8" onclick="diceRoll(1,8, 'roll8')">
+        Roll a Dice8
+  </button>
+    <h1 id="roll8"></h1>
 </article>
 <body>
-
+    <body style="margin:10px;padding:0px">
+    <p id="demo"></p>
+    <button onclick="Submit()">Submit</button>
+    <script>
+    function Submit(){
+        alert('You are a Winner')
+    }
+    </script>  
     <footer>
-        <p>Copyright Info: Mine not Yours</p>
+        <p>devsInc is a trademark company</p><br>
+        <p>Copyright: devsInc</p>
     </footer>
-    <!-- This footer need to be moved -->
-
-
-    
 </body>
 </html>
